@@ -12,9 +12,9 @@ const left_arrow = document.querySelectorAll('.arrow-left')
 function reset() {    
     for(let i=0; i < slides.length; i++) {
         slides[i].style.display = 'none';
-        slides0[0].style.display='inline-block';
-        slides1[0].style.display='inline-block';
     }
+    slides0[0].style.display='inline-block';
+    slides1[0].style.display='inline-block';
 }
 
 reset()
