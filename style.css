@@ -1,0 +1,42 @@
+
+.slideshow-container {
+  position: relative;
+  width: fit-content ;
+}
+
+
+img {
+    width:400px;
+    height: auto;
+}
+
+.img-caption {
+    font-size: 3em;
+    color: royalblue;
+    position: absolute;
+    z-index: 5;
+    top: 50px;
+    right: 0;
+    margin-right: 60px;
+  }
+  
+  .arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    z-index: 5;
+    font-size: 45px;
+    transition: 0.06s;
+    color: rgb(20, 18, 18);
+    padding: 5px 10px;
+  }
+  
+  .arrow-left {
+    left: 0;
+    margin-left: 20px;
+  }
+  
+  .arrow-right {
+    right: 0;
+    margin-right: 20px;
+  }
