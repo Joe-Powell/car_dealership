@@ -1,7 +1,12 @@
-
+* {
+  box-sizing: border-box;
+}
 .slideshow-container {
   position: relative;
+  display: inline-block;
   width: fit-content ;
+  margin: 0 10px 10px 0;
+  border:2px solid grey;
 }
 
 
@@ -21,22 +26,37 @@ img {
   }
   
   .arrow {
+    opacity: 0;
     cursor: pointer;
     position: absolute;
     top: 45%;
     z-index: 5;
-    font-size: 45px;
+    font-size: 25px;
     transition: 0.06s;
-    color: rgb(20, 18, 18);
+    color: rgb(206, 189, 189);
+    background-color: rgb(173, 166, 166);
+    border-radius: 20px;
     padding: 5px 10px;
+    transition: 0.7s;
+  }
+
+  .arrow:hover {
+    color:#fff;
+  }
+
+  .slideshow-container:hover .arrow {
+    opacity: 1;
   }
   
   .arrow-left {
     left: 0;
-    margin-left: 20px;
+    margin-left: 5px;
   }
   
   .arrow-right {
     right: 0;
-    margin-right: 20px;
+    margin-right: 5px;
   }
+
+  /* .slideOne {display: none;}
+  .slideTwo {display: none;} */
